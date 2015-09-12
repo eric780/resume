@@ -1,0 +1,88 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvtheme[blue]{casual}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.88]{geometry}
+
+%change shading of name to make firstname darker
+\usepackage{etoolbox}
+\patchcmd{\makecvtitle}{\color{color2!50}\@firstname}{\color{color2}\@firstname}{}{}
+\patchcmd{\makecvtitle}{\color{color2}\@lastname}{\color{color2!50}\@lastname}{}{}
+
+%Personal Data
+\firstname{Eric}
+\lastname{Lin}
+%\title{Curriculum Vitae}                           % optional, remove / comment the line if not wanted
+\address{318 Elmwood Ave Unit 2}{Ithaca, NY 14853}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\mobile{571-594-6663}                          % optional
+\email{esl89@cornell.edu}                               % optional
+%\homepage{www.johndoe.com}                         % optional
+%\extrainfo{}             % optional
+%\photo[64pt][0.4pt]{example-image-a}              % optional
+
+
+\begin{document}
+\makecvtitle
+\vspace*{-15mm}  %control space under the cvtitle
+
+\section{Education}
+\cventry{2013--2017}{BS in Computer Science}{Cornell University}{Ithaca, NY}{\textit{GPA: 3.82/4.0}}{Minor in Business}  % arguments 3 to 6 can be left empty
+\cventry{2013}{High School Diploma}{Thomas Jefferson High School for Science and Tech}{Alexandria, VA}{}{}{}{}
+
+
+
+\section{Leadership Experience}
+
+\cventry{Fall 2015}{Vice President}{Association of Computer Science Undergraduates}{}{}{
+- Scheduled and coordinated information sessions for over 20 tech companies hosted on campus. \newline{}
+- Managed regular club activities such as social events, office hours, and executive board meetings. \newline{}
+- Launched club initiatives such as Mentorship.}
+
+\cventry{Fall 2015}{CS3110 Functional Programming Teaching Assistant}{Cornell University}{Ithaca, NY}{}{
+- Led recitations  on course material, held office hours, and graded programming assignments and exams.}
+
+
+\section{Work Experience}
+
+\cventry{Summer 2015}{Software Development Intern}{Epic}{Madison, WI}{}{
+- Designed and implemented an algorithm and accompanying interface for assigning nurses to inpatients to maximize nurse satisfaction and quality of patient care. \newline{}
+- Applied our model to work with any hospital system and integrated it into Epic's framework. \newline{}
+- Developed primarily in C\# and Javascript, created design documentation and UI mockups. }
+
+\cventry{Summer 2014}{Quality Assurance Intern}{B-Line Medical, L.L.C.}{Washington, D.C}{}{
+- Built an accounting database application using Node.JS, HTML, Javascript, and SQLite. \newline{}
+- Created automated tests for basic CRUD operations using Selenium web driver and Jasmine. \newline{} 
+- Learned general software design principles like version control (Git) and code documentation. }
+
+\cventry{Summer 2012}{Web Development Intern}{International Fund for China's Environment}{Washington, D.C}{}{
+- Collaborated with a design student to create a website using HTML, CSS, Javascript, and PHP. \newline{}
+- Built in a contact page with email capabilities, and a registration form for an upcoming event. \newline{} 
+- Communicated with the organization regularly to determine preferred features of the site at each deadline.
+}
+
+\section{Extracurriculars}
+
+\cventry{Spring 2015}{Academic Excellence Workshop Facilitator}{Object-Oriented Programming \& Data Structures}{}{}{
+- Prepared and presented weekly lectures and problem sets based on and supplementing course material.}
+
+\cventry{2013-2015}{Business Analyst}{Cornell Strategic Consulting}{}{}{
+- Worked with local startups and small businesses to provide services such as market research, competitor analysis, financial planning, pricing models, and strategic recommendations.}
+
+
+
+\section{Projects}
+
+\cvline{Tag!}{First person Virtual Reality Horror-Shooter game. Oculus Rift, Leap Motion, and Unity Game Engine (C\#, Javascript), created at BrickHack. }
+
+\cvline{PokeMatch} {iOS tile matching game. Player can clear two matching tiles if there exists a path with less than 3 turns between them. Swift.}
+
+\cvline{Cornell Strategic Consulting}{Designed and developed a website for the club to increase online presence. Created an application page that increased new member applications over 30\% in its first week. HTML, Javascript, PHP.}
+
+\section{Programming Skills}
+\cvline{Languages}{Java, Javascript, OCaml, C\#, Python, HTML/CSS}
+\cvline{Databases}{SQLite}
+\cvline{Tools}{Node.JS, Git, iOS}
+
+
+\end{document}
